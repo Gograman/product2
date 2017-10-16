@@ -1,0 +1,13 @@
+createOriginalMA1Replicated <- function(replicationCount = 10,
+                                        size = 10,
+                                        psi = 0.5,
+                                        sigma = 1) {
+  
+  originalMA1Replicated <- array(NA, dim = c(replicationCount, size))
+  
+  for (i in 1:replicationCount) {
+    originalMA1Replicated[i, ] <- createOriginalMA1(size, psi, sigma)
+  }
+  
+  originalMA1Replicated
+}

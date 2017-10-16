@@ -1,0 +1,13 @@
+Package: product2
+Title: Computing simultaneous random processes
+Version: 0.0.0.1
+Authors: person("Boris Garbuzov",
+                email = "boris.garbuzov@@gmail.com", 
+                role = c("aut", "cre"))
+Description: Computing simultaneous random processes
+Depends: R (>= 3.3.2)
+License: BSD
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 6.0.1
+Imports: testthat, roxygen2, devtools

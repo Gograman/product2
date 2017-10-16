@@ -1,3 +1,19 @@
+#' @title drawProductCol
+#
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 drawProductCol <- function(productCol,
                            size,
                            mean,
@@ -8,10 +24,10 @@ drawProductCol <- function(productCol,
 ) {
   colfunc <- colorRampPalette(c(darkestColor, lightestColor))
   # pie(rep(1, size), col = colfunc(size))
-  
+
   # The array of RGB codes
   colfunc(size)
-  
+
   dir.create(file.path("./", "plots"), showWarnings = FALSE)
   # Forming a path to the exported products image
   full.name = paste0("productCol_",

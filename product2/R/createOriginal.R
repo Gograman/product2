@@ -1,3 +1,19 @@
+#' @title createOriginal
+#'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 createOriginal <- function(size = 10,
                            psi = 0.5,
                            sigma = 1) {

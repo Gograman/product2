@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1508151167928.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6259AB96",
+    "lastKnownWriteTime" : 1508151177,
+    "last_content_update" : 1508151177749,
+    "path" : "C:/Dropbox/Github/product2/product2/R/drawProductCol.R",
+    "project_path" : "R/drawProductCol.R",
+    "properties" : {
+        "cursorPosition" : "0,24",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 14,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

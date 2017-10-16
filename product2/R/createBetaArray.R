@@ -1,13 +1,29 @@
+#' @title createBetaArray
+#'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 createBetaArray <- function(original,
                             rho = 0.5) {
   size <- length(original)
   betaArray <- array(NA, dim = c(size-1, size))
-  
+
   lag = 1
   while ((size - lag) > 0) {
     for (rowIndex in 1:(size - 1)) {
       for (colIndex in 1:(size - lag + 1)) {
-        betaArray[rowIndex, colIndex] <- 
+        betaArray[rowIndex, colIndex] <-
           original[rowIndex] *
           (original[colIndex + lag - 1] - rho[rowIndex] * original[rowIndex])
       }

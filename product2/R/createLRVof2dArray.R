@@ -1,3 +1,19 @@
+#' @title createLRVof2dArray
+#'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 createLRVof2dArray <- function(array2d) {
   # for each line we calculate average
   # and take variance  of those averages
@@ -7,15 +23,15 @@ createLRVof2dArray <- function(array2d) {
   # Then variance for all the results
   # corrected 1 to 2
   # here we do not transpose because it was already transposed on 3d level
-  
-  
+
+
   naCountInARowVector = rowSums(is.na(array2d))
-  
+
   naCountInARow = naCountInARowVector[1]
   colCountNoNA = dim(array2d) [2] - naCountInARow
   array2dNoNA <- array2d[, 1:colCountNoNA]
   rowMeansArray <- rowMeans(array2dNoNA)
-  
+
   lrv <- colCountNoNA * var(rowMeansArray)
   lrv
 }

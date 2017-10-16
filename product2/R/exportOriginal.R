@@ -1,3 +1,19 @@
+#' @title exportOriginal
+#'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 exportOriginal <- function(original) {
   dir.create(file.path("./", "export"), showWarnings = FALSE)
   # Building the CSV file name (as long as size, psi & sigma are present

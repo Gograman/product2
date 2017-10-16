@@ -1,4 +1,20 @@
-createDiffDMatrixVsDHatMatrix <- function(dMatrix, 
+#' @title createDiffDMatrixVsDHatMatrix
+#'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
+createDiffDMatrixVsDHatMatrix <- function(dMatrix,
                                           dHatMatrix) {
   matDim <- c(min(dim(dMatrix)[1], dim(dHatMatrix)[1]),
               min(dim(dMatrix)[2], dim(dHatMatrix)[2])
@@ -7,10 +23,10 @@ createDiffDMatrixVsDHatMatrix <- function(dMatrix,
   dMatrixToCompare <- dMatrix[1:matDim[1], 1:matDim[2]]
   dHatMatrixToCompare <- dHatMatrix[1:matDim[1], 1:matDim[2]]
   diffDMatrixVsDHatMatrix <<- dMatrixToCompare - dHatMatrixToCompare
-  
+
   # # Exporting plots of differences
   iCount = dim(diffDMatrixVsDHatMatrix)[2]
-  
+
   for (i in 1:iCount) {
   dir.create(file.path("./", "plots"), showWarnings = FALSE)
     full.name = paste0("diffDMatrixVsDHatMatrix_lag_", i - 1, ".jpeg")
@@ -31,6 +47,6 @@ createDiffDMatrixVsDHatMatrix <- function(dMatrix,
     )
     graphics.off()
   }
-  
+
 }
 

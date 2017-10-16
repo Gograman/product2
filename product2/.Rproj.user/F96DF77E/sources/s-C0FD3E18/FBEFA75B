@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1508151022521.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FBEFA75B",
+    "lastKnownWriteTime" : 1508150460,
+    "last_content_update" : 1508150460,
+    "path" : "C:/Dropbox/Github/product2/product2/R/createBetaArray.R",
+    "project_path" : "R/createBetaArray.R",
+    "properties" : {
+        "cursorPosition" : "16,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

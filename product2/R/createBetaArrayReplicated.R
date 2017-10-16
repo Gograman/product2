@@ -1,5 +1,20 @@
-#' @export
+#' @title createBetaArrayReplicated
 #'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
+
 
 createBetaArrayReplicated <- function(originalReplicated,
                                       size,
@@ -10,6 +25,6 @@ createBetaArrayReplicated <- function(originalReplicated,
     betaArrayReplicated[ , , i] <- createBetaArray(original = originalReplicated[i, ],
                                                    rho = rho)
   }
-  
+
   betaArrayReplicated
 }

@@ -1,14 +1,30 @@
+#' @title drawCvsCHat
+#
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 drawCvsCHat <-  function(cMatrix, cHatMatrix) {
   iCount = min(dim(cMatrix)[2],
                dim(cHatMatrix)[2])
-  
+
   for (i in 1:iCount) {
     full.name = paste0("barplot_cHatMatrix_vs_cMatrix_lag_", i, ".jpeg")
     plot.path <- file.path("./", "plots", full.name)
     jpeg(plot.path)
     tmpMin <- min(cHatMatrix[, i], cMatrix[, i])
     tmpMax <- max(cHatMatrix[, i], cMatrix[, i])
-    tmpMatrix <- rbind(cHatMatrix[, i][1:iCount], 
+    tmpMatrix <- rbind(cHatMatrix[, i][1:iCount],
                        cMatrix[, i][1:iCount])
     rownames(tmpMatrix) <- c("C Hat", "C")
     barplot(tmpMatrix,

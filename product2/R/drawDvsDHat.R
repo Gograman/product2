@@ -1,3 +1,19 @@
+#' @title drawDvsDHat
+#
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 drawDvsDHat <-  function(dMatrix, dHatMatrix) {
   iCount = min(dim(dMatrix)[2],
                dim(dHatMatrix)[2])

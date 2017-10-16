@@ -1,3 +1,19 @@
+#' @title createcMatrix
+#'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 createCMatrix <- function(size,
                           sigma,
                           psi) {
@@ -7,7 +23,7 @@ createCMatrix <- function(size,
   c10 <- 2 * sigma ^ 4 * psi ^ 2
   c11 <- psi ^ 2 * sigma ^ 4
   c02 <- sigma ^ 4 * ((1 + psi ^ 2) ^ 2)
-  
+
   # Filling the entire first line with c02 value
   cMatrix[1,] <- c02
   # Filling the entire second line with c11 value

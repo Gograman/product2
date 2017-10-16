@@ -1,9 +1,25 @@
-createDiffCMatrixVsCHatMatrix <- function(cMatrix, 
+#' @title createDiffCMatrixVsCHatMatrix
+#'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
+createDiffCMatrixVsCHatMatrix <- function(cMatrix,
                                             cHatMatrix) {
     matDim <- c(min(dim(cMatrix)[1], dim(cHatMatrix)[1]),
               min(dim(cMatrix)[2], dim(cHatMatrix)[2]))
     # diff_cMatrix_vs_cHatMatrix <- array(NA, dim = c(matDim[1], matDim[2]))
-    diffCMatrixVsCHatMatrix <<- cMatrix[1:matDim[1], 1:matDim[2]] - 
+    diffCMatrixVsCHatMatrix <<- cMatrix[1:matDim[1], 1:matDim[2]] -
                                   cHatMatrix[1:matDim[1], 1:matDim[2]]
     iCount = dim(diffCMatrixVsCHatMatrix)[2]
 
@@ -14,7 +30,7 @@ createDiffCMatrixVsCHatMatrix <- function(cMatrix,
     plot.path <- file.path("./", "plots", full.name)
     jpeg(plot.path)
     # Need to be flattened to vectors
-    
+
     ithElement <- unlist(diffCMatrixVsCHatMatrix[, i])
     barplot(
       ithElement,

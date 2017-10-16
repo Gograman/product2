@@ -1,11 +1,27 @@
+#' @title createCHatMatrix
+#'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 createCHatMatrix <- function(productCol,
                              size) {
   # Eliminating all NA's
   prodColWithoutNA <- apply(productCol, MARGIN = 2, na.exclude)
-  
+
   # Creating an empty list
   cHatList <- vector("list", size - 1)
-  
+
   # Filling cHatList with ACF values
   for (i in 0:(size - 2)) {
     backtick <- '\x60'
@@ -15,7 +31,7 @@ createCHatMatrix <- function(productCol,
       acf(ithProdColWithoutNA, type = "covariance")
     cHatList[[i + 1]] <- as.vector(unlist(acfOfIthProdColWithoutNA$acf))
   }
-  
+
   # Building the final matrix,
   # complementing the missing values with NA's
   cHatMatrix <- array(0, dim = c(length(unlist(cHatList[[1]])),
@@ -28,6 +44,6 @@ createCHatMatrix <- function(productCol,
            cHatMatrix[, i] <- c(unlist(cHatList[i]),
                                 rep(0, difLength)))
   }
-  
+
   cHatMatrix
 }

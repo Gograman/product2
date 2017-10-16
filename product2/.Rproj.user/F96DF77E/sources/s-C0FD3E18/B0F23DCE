@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1508151129201.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B0F23DCE",
+    "lastKnownWriteTime" : 1508151162,
+    "last_content_update" : 1508151162522,
+    "path" : "C:/Dropbox/Github/product2/product2/R/drawDvsDHat.R",
+    "project_path" : "R/drawDvsDHat.R",
+    "properties" : {
+        "cursorPosition" : "0,20",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 13,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

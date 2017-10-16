@@ -1,11 +1,27 @@
+#' @title createProductCol
+#'
+#' @name
+#'
+#' @aliases
+#'
+#' @description
+#'
+#' @param
+#'
+#' @return
+#'
+#' @examples
+#'
+#' @export
+
 createProductCol <- function(original) {
   lengthOriginal <- length(original)
-  productCol  <- matrix(NA, nrow = lengthOriginal, 
+  productCol  <- matrix(NA, nrow = lengthOriginal,
                         ncol = lengthOriginal)
-  
+
   # Filling the upper diagonal with product values
   productCol [lengthOriginal, 1] = original[lengthOriginal] ^ 2
-  
+
   lag = 1
   while ((lengthOriginal - lag) > 0) {
     for (rowIndex in 1:(lengthOriginal - 1)) {
@@ -18,6 +34,6 @@ createProductCol <- function(original) {
   }
   productCol <- as.data.frame(productCol)
   colnames(productCol) <- as.character(0:(lengthOriginal - 1))
-  
+
   productCol
 }

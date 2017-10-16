@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1508151043014.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E11A1193",
+    "lastKnownWriteTime" : 1508150596,
+    "last_content_update" : 1508150596,
+    "path" : "C:/Dropbox/Github/product2/product2/R/createDiffCMatrixVsCHatMatrix.R",
+    "project_path" : "R/createDiffCMatrixVsCHatMatrix.R",
+    "properties" : {
+        "cursorPosition" : "16,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

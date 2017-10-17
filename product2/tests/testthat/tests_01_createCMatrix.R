@@ -2,7 +2,7 @@
 # for dimensions of result
 
 myTestFunction = function() {
-  cat("\n Testing \'tests_01_createCMatrix\' \n")
+  cat("\nTesting \'tests_01_createCMatrix\' \n")
   mySize <- 10
   mySigma <- 1
   myPsi <- 0.5
@@ -16,7 +16,7 @@ myTestFunction = function() {
   dimShouldBe <- c(9, 9)
   expect_that(dimOfCMatrix, equals(dimShouldBe))
   cat("\nDuration = ",duration,"\n")
-  cat("\nCmatrix = ",myCMatrix,"n")
+  cat("\nCmatrix = ",myCMatrix,"\n")
   cat("=====================")
   cat("\nTest parameters :","\n")
   cat("\nsize = ",mySize,"\n")

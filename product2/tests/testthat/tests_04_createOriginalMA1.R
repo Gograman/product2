@@ -1,6 +1,6 @@
 createOriginalMA1Funtion<-function()
 {
-  cat("\n Testing \'tests_04_createOriginalMA1\' \n")
+  cat("\nTesting \'tests_04_createOriginalMA1\' \n")
   mySize <- 10
   mySigma <- 1
   myPsi <- 0.5
@@ -12,7 +12,7 @@ createOriginalMA1Funtion<-function()
   duration <- End - Start
   expect_that(length(myOriginalMa1), equals(10))
   cat("\nDuration = ",duration,"\n")
-  cat("\nOriginalMa1 = ",myOriginalMa1,"n")
+  cat("\nOriginalMa1 = ",myOriginalMa1,"\n")
   cat("=====================")
   cat("\nTest parameters :","\n")
   cat("\nsize = ",mySize,"\n")

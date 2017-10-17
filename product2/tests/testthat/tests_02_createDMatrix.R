@@ -2,7 +2,7 @@
 # for dimensions of result - dMatrix
 
 createDMatrixFuntion = function() {
-  cat("\n Testing \'tests_02_createDMatrix\' \n")
+  cat("\nTesting \'tests_02_createDMatrix\' \n")
   mySize <- 10
   mySigma <- 1
   myPsi <- 0.5
@@ -16,7 +16,7 @@ createDMatrixFuntion = function() {
   dimShouldBe <- c(9, 9)
   expect_that(dimOfDMatrix, equals(dimShouldBe))
   cat("\nDuration = ",duration,"\n")
-  cat("\nDmatrix = ",myDMatrix,"n")
+  cat("\nDmatrix = ",myDMatrix,"\n")
   cat("=====================")
   cat("\nTest parameters :","\n")
   cat("\nsize = ",mySize,"\n")

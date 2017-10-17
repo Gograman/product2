@@ -1,14 +1,15 @@
 #' @title createDHatMatrix
 #'
-#' @name
+#' @name createDHatMatrix
 #'
-#' @aliases
+#' @aliases createDHatMatrix
 #'
-#' @description
+#' @description createDHatMatrix
 #'
-#' @param
+#' @param betaArray betaArray
+#' @param size size
 #'
-#' @return
+#' @return dHatMatrix
 #'
 #' @examples
 #'

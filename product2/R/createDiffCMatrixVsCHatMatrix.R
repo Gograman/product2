@@ -1,14 +1,15 @@
 #' @title createDiffCMatrixVsCHatMatrix
 #'
-#' @name
+#' @name createDiffCMatrixVsCHatMatrix
 #'
-#' @aliases
+#' @aliases createDiffCMatrixVsCHatMatrix
 #'
-#' @description
+#' @description createDiffCMatrixVsCHatMatrix
 #'
-#' @param
-#'
-#' @return
+#' @param cMatrix cMatrix
+#' @param cHatMatrix cHatMatrix
+##'
+#' @return diffCMatrixVsCHatMatrix
 #'
 #' @examples
 #'

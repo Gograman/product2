@@ -1,14 +1,15 @@
 #' @title createCHatMatrixInALoop
 #'
-#' @name
+#' @name createCHatMatrixInALoop
 #'
-#' @aliases
+#' @aliases createCHatMatrixInALoop
 #'
-#' @description
+#' @description createCHatMatrixInALoop
 #'
-#' @param
+#' @param productCol productCol
+#' @param size size
 #'
-#' @return
+#' @return cHatMatrixInALoop
 #'
 #' @examples
 #'

@@ -1,14 +1,16 @@
 #' @title createDMatrix
 #'
-#' @name
+#' @name createDMatrix
 #'
-#' @aliases
+#' @aliases createDMatrix
 #'
-#' @description
+#' @description createDMatrix
 #'
-#' @param
+#' @param size size
+#' @param sigma sigma
+#' @param psi psi 
 #'
-#' @return
+#' @return dMatrix
 #'
 #' @examples
 #'

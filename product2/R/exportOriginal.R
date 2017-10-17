@@ -1,14 +1,14 @@
 #' @title exportOriginal
 #'
-#' @name
+#' @name exportOriginal
 #'
-#' @aliases
+#' @aliases exportOriginal
 #'
-#' @description
+#' @description exportOriginal
 #'
-#' @param
+#' @param original original
 #'
-#' @return
+#' @return an CSV file
 #'
 #' @examples
 #'

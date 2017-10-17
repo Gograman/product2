@@ -1,12 +1,14 @@
 #' @title createOriginal
 #'
-#' @name
+#' @name createOriginal
 #'
-#' @aliases
+#' @aliases createOriginal
 #'
-#' @description
+#' @description createOriginal
 #'
-#' @param
+#' @param size size
+#' @param psi psi
+#' @param sigma sigma
 #'
 #' @return
 #'

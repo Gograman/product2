@@ -1,12 +1,13 @@
 #' @title createBetaArray
 #'
-#' @name
+#' @name createBetaArray
 #'
-#' @aliases
+#' @aliases createBetaArray
 #'
 #' @description
 #'
-#' @param
+#' @param original original
+#' @param rho rho
 #'
 #' @return
 #'

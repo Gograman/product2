@@ -1,14 +1,14 @@
 #' @title createProductCol
 #'
-#' @name
+#' @name createProductCol
 #'
-#' @aliases
+#' @aliases createProductCol
 #'
-#' @description
+#' @description createProductCol
 #'
-#' @param
+#' @param original original 
 #'
-#' @return
+#' @return productCol
 #'
 #' @examples
 #'

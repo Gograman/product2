@@ -1,14 +1,14 @@
 #' @title createLRVof2dArray
 #'
-#' @name
+#' @name createLRVof2dArray
 #'
-#' @aliases
+#' @aliases createLRVof2dArray
 #'
-#' @description
+#' @description createLRVof2dArray
 #'
-#' @param
+#' @param array2d array2d
 #'
-#' @return
+#' @return LRVof2dArray
 #'
 #' @examples
 #'

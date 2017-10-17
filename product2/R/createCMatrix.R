@@ -1,14 +1,16 @@
 #' @title createcMatrix
 #'
-#' @name
+#' @name createcMatrix
 #'
-#' @aliases
+#' @aliases createcMatrix
 #'
-#' @description
+#' @description createcMatrix
 #'
-#' @param
+#' @param size size
+#' @param sigma sigma
+#' @param psi psi 
 #'
-#' @return
+#' @return cMatrix
 #'
 #' @examples
 #'

@@ -1,14 +1,17 @@
 #' @title createOriginalMA1Replicated
 #'
-#' @name
+#' @name createOriginalMA1Replicated
 #'
-#' @aliases
+#' @aliases createOriginalMA1Replicated
 #'
-#' @description
+#' @description createOriginalMA1Replicated
 #'
-#' @param
+#' @param replicationCount replicationCount 
+#' @param size size
+#' @param psi psi
+#' @param sigma sigma
 #'
-#' @return
+#' @return originalMA1Replicated
 #'
 #' @examples
 #'

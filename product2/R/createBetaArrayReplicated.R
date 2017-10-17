@@ -6,7 +6,10 @@
 #'
 #' @description
 #'
-#' @param
+#' @param originalReplicated originalReplicated
+#' @param size size
+#' @param replicationCount replicationCount
+#' @param rho rho
 #'
 #' @return
 #'

@@ -1,14 +1,15 @@
 #' @title createCHatMatrix
 #'
-#' @name
+#' @name createCHatMatrix
 #'
-#' @aliases
+#' @aliases createCHatMatrix
 #'
-#' @description
+#' @description createCHatMatrix
 #'
-#' @param
+#' @param productCol productCol
+#' @param size size
 #'
-#' @return
+#' @return cHatMatrix
 #'
 #' @examples
 #'

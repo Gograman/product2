@@ -1,14 +1,15 @@
 #' @title drawCvsCHat
 #
-#' @name
+#' @name drawCvsCHat
 #'
-#' @aliases
+#' @aliases drawCvsCHat
 #'
 #' @description
 #'
-#' @param
+#' @param cMatrix cMatrix
+#' @param cHatMatrix cHatMatrix
 #'
-#' @return
+#' @return picture
 #'
 #' @examples
 #'

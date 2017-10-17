@@ -1,14 +1,14 @@
 #' @title saveProductCol
 #'
-#' @name
+#' @name saveProductCol
 #'
-#' @aliases
+#' @aliases saveProductCol
 #'
-#' @description
+#' @description saveProductCol
 #'
-#' @param
+#' @param dataframe dataframe
 #'
-#' @return
+#' @return a CSV file
 #'
 #' @examples
 #'
@@ -18,5 +18,6 @@ saveProductCol <- function(dataframe) {
   nameOfFile <-
     dir.create(file.path("./", "export"), showWarnings = FALSE)
   write.csv(dataframe, file = "export/productColExported.csv")
+
 
 }

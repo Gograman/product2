@@ -1,14 +1,14 @@
 #' @title createLRVof3dArray
 #'
-#' @name
+#' @name createLRVof3dArray
 #'
-#' @aliases
+#' @aliases createLRVof3dArray
 #'
-#' @description
+#' @description createLRVof3dArray
 #'
-#' @param
+#' @param array3d array3d
 #'
-#' @return
+#' @return LRVof3dArray
 #'
 #' @examples
 #'

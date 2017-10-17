@@ -1,14 +1,15 @@
 #' @title drawDvsDHat
 #
-#' @name
+#' @name drawDvsDHat
 #'
-#' @aliases
+#' @aliases drawDvsDHat
 #'
-#' @description
+#' @description drawDvsDHat
 #'
-#' @param
+#' @param dMatrix dMatrix
+#' @param dHatMatrix dHatMatrix
 #'
-#' @return
+#' @return picture
 #'
 #' @examples
 #'

@@ -1,14 +1,16 @@
 #' @title createOriginalMA1
 #'
-#' @name
+#' @name createOriginalMA1
 #'
-#' @aliases
+#' @aliases createOriginalMA1
 #'
-#' @description
+#' @description createOriginalMA1
 #'
-#' @param
+#' @param size size
+#' @param psi psi
+#' @param sigma sigma
 #'
-#' @return
+#' @return originalMA1
 #'
 #' @examples
 #'

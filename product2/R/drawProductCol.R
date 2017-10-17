@@ -6,9 +6,15 @@
 #'
 #' @description
 #'
-#' @param
+#' @param productCol productCol 
+#' @param size size 
+#' @param mean mean 
+#' @param sigma sigma 
+#' @param lagCount lagCount 
+#' @param darkestColor darkestColor 
+#' @param lightestColor lightestColor 
 #'
-#' @return
+#' @return picture file
 #'
 #' @examples
 #'

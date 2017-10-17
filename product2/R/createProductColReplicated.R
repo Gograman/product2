@@ -1,14 +1,16 @@
 #' @title createProductColReplicated
 #'
-#' @name
+#' @name createProductColReplicated
 #'
-#' @aliases
+#' @aliases createProductColReplicated
 #'
-#' @description
+#' @description createProductColReplicated
 #'
-#' @param
+#' @param originalReplicated originalReplicated
+#' @param size size
+#' @param replicationCount replicationCount
 #'
-#' @return
+#' @return productColReplicated
 #'
 #' @examples
 #'

@@ -4,16 +4,17 @@
 #'
 #' @aliases createDMatrix
 #'
-#' @description createDMatrix
+#' @description  Creating a two-dimensional array of dimensions \code{c(size - 1, size - 1)} using a formula from the article.
 #'
 #' @param size size
 #' @param sigma sigma
 #' @param psi psi 
 #'
-#' @return dMatrix
+#' @return Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}
 #'
 #' @examples
-#'
+#' createDMatrix(size = 10, sigma = 1, psi = 0.5)
+#' 
 #' @export
 
 createDMatrix <- function(size,

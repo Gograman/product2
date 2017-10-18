@@ -2,6 +2,7 @@
 % Please edit documentation in R/createOriginalMA1.R
 \name{createOriginalMA1}
 \alias{createOriginalMA1}
+\alias{createOriginal}
 \title{createOriginalMA1}
 \usage{
 createOriginalMA1(size, psi, sigma)
@@ -14,11 +15,12 @@ createOriginalMA1(size, psi, sigma)
 \item{sigma}{sigma}
 }
 \value{
-originalMA1
+Returninng a one-dimensional array of size \code{size}.
 }
 \description{
-createOriginalMA1
+Creating a one-dimensional array using \code{stats::arima.sim()}, passing \code{size}, \code{sigma} and \code{psi} (\code{psi} being the argument of the model).
 }
 \examples{
+createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
 
 }

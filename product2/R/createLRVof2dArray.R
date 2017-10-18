@@ -4,13 +4,16 @@
 #'
 #' @aliases createLRVof2dArray
 #'
-#' @description createLRVof2dArray
+#' @description Computing a long-run variance of a two-dimensional array (column-wise).
 #'
 #' @param array2d array2d
 #'
-#' @return LRVof2dArray
+#' @return A scalar value of the long-run variance of a two-dimensional array.
 #'
 #' @examples
+#' original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+#' productCol <- createProductCol(original)
+#' createLRVof2dArray(productCol)
 #'
 #' @export
 

@@ -2,19 +2,22 @@
 % Please edit documentation in R/createProductCol.R
 \name{createProductCol}
 \alias{createProductCol}
+\alias{createAlpha}
 \title{createProductCol}
 \usage{
 createProductCol(original)
 }
 \arguments{
-\item{original}{original}
+\item{original}{A one-dimensinal array \code{original}.}
 }
 \value{
-productCol
+Returning a two-dimensional upper-triangle-like array of dimensions \code{c(length(original), length(original))}.
 }
 \description{
-createProductCol
+Creating a two-dimensional upper-triangle-like array of dimensions \code{c(length(original), length(original))}. Each value in a cell \code{productCol[i, i]} is a product of \code{original[i] * original[i]}.
 }
 \examples{
+original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+createProductCol(original)
 
 }

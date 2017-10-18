@@ -4,14 +4,17 @@
 #'
 #' @aliases createDHatMatrix
 #'
-#' @description createDHatMatrix
+#' @description Creating a two-dimensional array of dimensions \code{c(size - 1, size - 1)}.
 #'
 #' @param betaArray betaArray
 #' @param size size
 #'
-#' @return dHatMatrix
+#' @return Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}.
 #'
 #' @examples
+#' original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+#' betaArray <- createBetaArray <- function(original, rho = 0.5)
+#' createDHatMatrix(betaArray, size = 10)
 #'
 #' @export
 

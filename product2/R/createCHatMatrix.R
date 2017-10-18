@@ -4,14 +4,17 @@
 #'
 #' @aliases createCHatMatrix
 #'
-#' @description createCHatMatrix
+#' @description Creating a two-dimensional array of dimensions \code{c(size - 1, size - 1)}.
 #'
 #' @param productCol productCol
 #' @param size size
 #'
-#' @return cHatMatrix
+#' @return Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}.
 #'
 #' @examples
+#' original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+#' productCol <- createProductCol(original)
+#' createCHatMatrix(productCol, size = 10)
 #'
 #' @export
 

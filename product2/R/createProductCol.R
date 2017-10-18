@@ -2,16 +2,18 @@
 #'
 #' @name createProductCol
 #'
-#' @aliases createProductCol
+#' @aliases createAlpha
 #'
-#' @description createProductCol
+#' @description Creating a two-dimensional upper-triangle-like array of dimensions \code{c(length(original), length(original))}. Each value in a cell \code{productCol[i, i]} is a product of \code{original[i] * original[i]}.
 #'
-#' @param original original 
+#' @param original A one-dimensinal array \code{original}.
 #'
-#' @return productCol
+#' @return Returning a two-dimensional upper-triangle-like array of dimensions \code{c(length(original), length(original))}.
 #'
 #' @examples
-#'
+#' original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+#' createProductCol(original)
+#' 
 #' @export
 
 createProductCol <- function(original) {

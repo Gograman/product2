@@ -12,11 +12,16 @@ createDiffCMatrixVsCHatMatrix(cMatrix, cHatMatrix)
 \item{cHatMatrix}{cHatMatrix}
 }
 \value{
-diffCMatrixVsCHatMatrix
+Returning a two-dimensional array.
 }
 \description{
-createDiffCMatrixVsCHatMatrix
+Creating a two-dimensional array of dimensions that cover both \code{cMatrix} and \code{cHatMatrix} data area, using \code{(c(min(dim(cMatrix)[1], dim(cHatMatrix)[1]), c(min(dim(cMatrix)[2], dim(cHatMatrix)[2]),)}.
 }
 \examples{
+cMatrix <- createCMatrix(size = 10, sigma = 1, psi = 0.5)
+original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+productCol <- createProductCol(original)
+cHatMatrix <- createCHatMatrix(productCol, size = 10)
+createDiffCMatrixVsCHatMatrix(cMatrix, cHatMatrix)
 
 }

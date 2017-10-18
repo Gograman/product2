@@ -1,10 +1,10 @@
 #' @title drawProductCol
 #
-#' @name
+#' @name drawProductCol
 #'
-#' @aliases
+#' @aliases drawProductCol
 #'
-#' @description
+#' @description Drawing a plot of \code{ProductCol} values. Exporting it to a JPEG file saved to \code{"./plots"} directory.
 #'
 #' @param productCol productCol 
 #' @param size size 
@@ -14,9 +14,12 @@
 #' @param darkestColor darkestColor 
 #' @param lightestColor lightestColor 
 #'
-#' @return picture file
+#' @return A JPEG file located at \code{"./plots"} directory.
 #'
 #' @examples
+#' original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+#' productCol <- createProductCol(original)
+#' drawProductCol(productCol, size = 10, mean = 0, sigma = 1, lagCount = 2, darkestColor = "dark blue", lightestColor = "white"
 #'
 #' @export
 

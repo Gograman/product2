@@ -14,11 +14,12 @@ createDMatrix(size, sigma, psi)
 \item{psi}{psi}
 }
 \value{
-dMatrix
+Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}
 }
 \description{
-createDMatrix
+Creating a two-dimensional array of dimensions \code{c(size - 1, size - 1)} using a formula from the article.
 }
 \examples{
+createDMatrix(size = 10, sigma = 1, psi = 0.5)
 
 }

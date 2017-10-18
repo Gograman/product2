@@ -18,7 +18,7 @@
 
 
 createCHatMatrixInALoop <- function(productCol,
-                             size) {
+                                    size) {
   # Eliminating all NA's
   x <- apply(productCol, MARGIN = 2, na.exclude)
 

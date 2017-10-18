@@ -17,11 +17,12 @@ createOriginalMA1Replicated(replicationCount = 10, size = 10, psi = 0.5,
 \item{sigma}{sigma}
 }
 \value{
-originalMA1Replicated
+Returninng a two-dimensional array of dimensions \code{c(replicationCount, size)}.
 }
 \description{
-createOriginalMA1Replicated
+Creating a two-dimensional array using \code{createOriginalMA1()}, as an underlyin function, passing \code{replicationCount} as the outer counter, \code{size}, \code{sigma} and \code{psi} (\code{psi} being the argument of the model).
 }
 \examples{
+createOriginalMA1Replicated (replicationCount = 10, size = 10, psi = 0.5, sigma = 1)
 
 }

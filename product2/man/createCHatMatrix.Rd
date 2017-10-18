@@ -12,11 +12,14 @@ createCHatMatrix(productCol, size)
 \item{size}{size}
 }
 \value{
-cHatMatrix
+Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}.
 }
 \description{
-createCHatMatrix
+Creating a two-dimensional array of dimensions \code{c(size - 1, size - 1)}.
 }
 \examples{
+original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+productCol <- createProductCol(original)
+createCHatMatrix(productCol, size = 10)
 
 }

@@ -14,11 +14,13 @@ createProductColReplicated(originalReplicated, size, replicationCount)
 \item{replicationCount}{replicationCount}
 }
 \value{
-productColReplicated
+Returning a three-dimensional array of dimensions \code{c(size, size, replicationCount)}
 }
 \description{
-createProductColReplicated
+Creating a three-dimensional array of dimensions \code{c(size, size, replicationCount)} using \code{createProductCol()} as an underlying function.
 }
 \examples{
+originalReplicated <- createOriginalMA1Replicated (replicationCount = 10, size = 10, psi = 0.5, sigma = 1)
+createProductColReplicated(originalReplicated, size = 10, replicationCount = 10)
 
 }

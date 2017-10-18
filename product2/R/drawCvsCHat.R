@@ -4,14 +4,19 @@
 #'
 #' @aliases drawCvsCHat
 #'
-#' @description
+#' @description Drawing a barplot of side-by-side values of \code{cMatrix} and \code{cHatMatrix} values. Exporting it to a JPEG file saved to \code{"./plots"} directory.
 #'
 #' @param cMatrix cMatrix
 #' @param cHatMatrix cHatMatrix
 #'
-#' @return picture
+#' @return A JPEG file located at \code{"./plots"} directory.
 #'
 #' @examples
+#' cMatrix <- createCMatrix(size = 10, sigma = 1, psi = 0.5) 
+#' original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+#' productCol <- createProductCol(original)
+#' cHatMatrix <- createCHatMatrix(productCol, size = 10)
+#' drawCvsCHat(cMatrix, cHatMatrix)
 #'
 #' @export
 

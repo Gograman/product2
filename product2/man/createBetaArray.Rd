@@ -12,11 +12,13 @@ createBetaArray(original, rho = 0.5)
 \item{rho}{rho}
 }
 \value{
-
+Returning a two-dimensional array of dimensions \code{c(size - 1, size)}.
 }
 \description{
-
+Creating a two-dimensional array of dimensions \code{c(size - 1, size)}.
 }
 \examples{
+original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+createBetaArray <- function(original, rho = 0.5)
 
 }

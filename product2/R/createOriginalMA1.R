@@ -2,17 +2,18 @@
 #'
 #' @name createOriginalMA1
 #'
-#' @aliases createOriginalMA1
+#' @aliases createOriginal
 #'
-#' @description createOriginalMA1
+#' @description Creating a one-dimensional array using \code{stats::arima.sim()}, passing \code{size}, \code{sigma} and \code{psi} (\code{psi} being the argument of the model).
 #'
 #' @param size size
 #' @param psi psi
 #' @param sigma sigma
 #'
-#' @return originalMA1
+#' @return Returninng a one-dimensional array of size \code{size}.
 #'
 #' @examples
+#' createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
 #'
 #' @export
 

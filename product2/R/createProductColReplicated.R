@@ -4,15 +4,17 @@
 #'
 #' @aliases createProductColReplicated
 #'
-#' @description createProductColReplicated
+#' @description Creating a three-dimensional array of dimensions \code{c(size, size, replicationCount)} using \code{createProductCol()} as an underlying function.
 #'
 #' @param originalReplicated originalReplicated
 #' @param size size
 #' @param replicationCount replicationCount
 #'
-#' @return productColReplicated
+#' @return Returning a three-dimensional array of dimensions \code{c(size, size, replicationCount)}
 #'
 #' @examples
+#' originalReplicated <- createOriginalMA1Replicated (replicationCount = 10, size = 10, psi = 0.5, sigma = 1)
+#' createProductColReplicated(originalReplicated, size = 10, replicationCount = 10)
 #'
 #' @export
 

@@ -10,11 +10,14 @@ saveProductCol(dataframe)
 \item{dataframe}{dataframe}
 }
 \value{
-a CSV file
+A CSV file located in \code{./export} directory.
 }
 \description{
-saveProductCol
+Saving two-dimensional array \code{original} to a CSV file saved to \code{./export} directory.
 }
 \examples{
+original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+productCol <- createProductCol(original)
+saveProductCol(productCol)
 
 }

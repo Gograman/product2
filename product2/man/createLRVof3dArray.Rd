@@ -10,11 +10,14 @@ createLRVof3dArray(array3d)
 \item{array3d}{array3d}
 }
 \value{
-LRVof3dArray
+An array of the LRV (long-run variance) values of each column.
 }
 \description{
-createLRVof3dArray
+Computing a long-run variance of a three-dimensional array.
 }
 \examples{
+originalReplicated <- createOriginalMA1Replicated (replicationCount = 10, size = 10, psi = 0.5, sigma = 1)
+productColReplicated <- createProductColReplicated(originalReplicated, size = 10, replicationCount = 10)
+createLRVof3dArray(productColReplicated)
 
 }

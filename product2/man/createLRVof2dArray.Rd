@@ -10,11 +10,14 @@ createLRVof2dArray(array2d)
 \item{array2d}{array2d}
 }
 \value{
-LRVof2dArray
+A scalar value of the long-run variance of a two-dimensional array.
 }
 \description{
-createLRVof2dArray
+Computing a long-run variance of a two-dimensional array (column-wise).
 }
 \examples{
+original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)
+productCol <- createProductCol(original)
+createLRVof2dArray(productCol)
 
 }

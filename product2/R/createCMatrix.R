@@ -1,18 +1,19 @@
-#' @title createcMatrix
+#' @title createCMatrix
 #'
-#' @name createcMatrix
+#' @name createCMatrix
 #'
-#' @aliases createcMatrix
+#' @aliases createCMatrix
 #'
-#' @description createcMatrix
+#' @description Creating a two-dimensional array of dimensions \code{c(size - 1, size - 1)} using a formula from the article.
 #'
 #' @param size size
 #' @param sigma sigma
 #' @param psi psi 
 #'
-#' @return cMatrix
+#' @return Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}
 #'
 #' @examples
+#' createCMatrix(size = 10, sigma = 1, psi = 0.5) 
 #'
 #' @export
 

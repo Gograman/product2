@@ -17,7 +17,7 @@ cMatrix <- createCMatrix(size = size,
                          sigma = sigma)
 
 lrvProductColReplicated = cMatrix [1,] + 2 * cMatrix [2,]
-
+xArray <- 1:(size-1)
 NlrvProductColReplicatedHat <- 5
 lrvProductColReplicatedHatArray <- matrix(0, nrow = size - 1,ncol = NlrvProductColReplicatedHat)
 for(index in 1:NlrvProductColReplicatedHat)
@@ -30,12 +30,19 @@ for(index in 1:NlrvProductColReplicatedHat)
   productColReplicated <- createProductColReplicated(originalReplicated = originalReplicated,
                                                      size = size,
                                                      replicationCount = replicationCount)
-  lrvProductColReplicatedHatArray[,index] <- createLRVof3dArray(array3d = productColReplicated)
+  lrvHat <- createLRVof3dArray(array3d = productColReplicated)
+  fileName <- "productCol_lrvHatTemp"
+  fileName <- paste(fileName,index,sep = "_")
+  saveJpg(fileName,"./plots/")
+  plot(lrvHat~xArray,type = "l", col = "blue",xlab = "size")
+  title(main = "ProductColLrvHat")
+  graphics.off()
+  lrvProductColReplicatedHatArray[,index] <- lrvHat
 }
 df <- data.frame(lrvProductColReplicated,lrvProductColReplicatedHatArray)
 max <- max(df)
 min <- min(df)
-xArray <- 1:(size-1)
+
 saveJpg("productCol_lrv","./plots/")
 plot(lrvProductColReplicated ~ xArray, type = "l",col = "red",ylim = c(min,max),xlab  = "size")
 title(main="ProductCol lrv & lrvHat")

@@ -4,10 +4,10 @@ if (!require("rstudioapi"))
 library(rstudioapi)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # Loading the functions
-source("sourceAll.R")
+# source("sourceAll.R") # legacy, before it was a package
 
 replicationCount = 3
-size = 10
+size = 100
 psi = .5
 # psi = 0 # makes it iid
 sigma = 1
@@ -21,17 +21,17 @@ rho = rep(0, length = size)
 rho [1] = psi / (1 + psi ^ 2)
 gamma1 = psi * sigma^2
 lrvOriginal = gamma0 + 2 * gamma1
-  
+
 lagCount = 10
 lagCount = min(lagCount, size)
 
 
-# original <- createOriginalMA1(size = size, 
-#                               psi = psi, 
+# original <- createOriginalMA1(size = size,
+#                               psi = psi,
 #                               sigma = sigma)
 originalReplicated <- createOriginalMA1Replicated(replicationCount = replicationCount,
-                                                   size = size, 
-                                                   psi = psi, 
+                                                   size = size,
+                                                   psi = psi,
                                                    sigma = sigma)
 original = originalReplicated [1, ]
 
@@ -85,7 +85,7 @@ lrvProductColReplicated
 maxLRV = max (c(lrvProductColReplicated, lrvProductColReplicatedHat), na.rm = T)
 minLRV = min (lrvProductColReplicated, lrvProductColReplicatedHat)
 jpeg("./plots/alpha_lrv.jpeg")
-plot (lrvProductColReplicated, pch = 17, col = "green", 
+plot (lrvProductColReplicated, pch = 17, col = "green",
       ylim = c(minLRV - 1, maxLRV + 1))
 points (lrvProductColReplicatedHat, pch = 17, col = "red")
 graphics.off()
@@ -107,12 +107,18 @@ cHatMatrix <- createCHatMatrix(productCol, size)
 dHatMatrix <- createDHatMatrix(betaArray, size)
 dim(cHatMatrix)
 
-createDiffCMatrixVsCHatMatrix(cMatrix = cMatrix, 
+createDiffCMatrixVsCHatMatrix(cMatrix = cMatrix,
                                 cHatMatrix = cHatMatrix)
-createDiffDMatrixVsDHatMatrix(dMatrix = dMatrix, 
+createDiffDMatrixVsDHatMatrix(dMatrix = dMatrix,
                                 dHatMatrix = dHatMatrix)
 
 drawCvsCHat(cMatrix = cMatrix, cHatMatrix = cHatMatrix)
 drawDvsDHat(dMatrix = dMatrix, dHatMatrix = dHatMatrix)
 
+drawProductCol(productCol = productCol,
+               size = size,
+               mean = mean,
+               sigma = sigma,
+               lagCount = lagCount
+               )
 

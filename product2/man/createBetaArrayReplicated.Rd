@@ -7,13 +7,13 @@
 createBetaArrayReplicated(originalReplicated, size, replicationCount, rho)
 }
 \arguments{
-\item{originalReplicated}{originalReplicated}
+\item{originalReplicated}{A three-dimensional array of dimensions \code{c(replicationCount, size)}.}
 
-\item{size}{size}
+\item{size}{The size of the one-dimensional array \code{original}.}
 
-\item{replicationCount}{replicationCount}
+\item{replicationCount}{An number of replications, other words amount of times \code{createBetaArray()} is going to be executed.}
 
-\item{rho}{rho}
+\item{rho}{A \code{rho} parameter.}
 }
 \value{
 Returning a three-dimensional array of dimensions \code{c(size - 1, size, replicationCount)}

@@ -7,7 +7,7 @@
 createLRVof3dArray(array3d)
 }
 \arguments{
-\item{array3d}{array3d}
+\item{array3d}{A \code{productColReplicated} three-dimensional array.}
 }
 \value{
 An array of the LRV (long-run variance) values of each column.

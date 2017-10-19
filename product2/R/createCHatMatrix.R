@@ -6,8 +6,8 @@
 #'
 #' @description Creating a two-dimensional array of dimensions \code{c(size - 1, size - 1)}.
 #'
-#' @param productCol productCol
-#' @param size size
+#' @param productCol A two-dimensional array of dimensions \code{c(length(original), length(original))}.
+#' @param size The size of the one-dimensional array \code{original}.
 #'
 #' @return Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}.
 #'

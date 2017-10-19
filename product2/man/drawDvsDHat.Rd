@@ -7,12 +7,12 @@
 drawDvsDHat(dMatrix, dHatMatrix)
 }
 \arguments{
-\item{dMatrix}{dMatrix}
+\item{dMatrix}{A dMatrix}
 
-\item{dHatMatrix}{dHatMatrix}
+\item{dHatMatrix}{A dHatMatrix}
 }
 \value{
-A JPEG file located at \code{"./plots"} directory.
+No data structures returned. Saving JPEG file located at \code{"./plots"} directory.
 }
 \description{
 Drawing a barplot of side-by-side values of \code{dMatrix} and \code{dHatMatrix} values. Exporting it to a JPEG file saved to \code{"./plots"} directory.

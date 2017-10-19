@@ -9,7 +9,7 @@ createDHatMatrix(betaArray, size)
 \arguments{
 \item{betaArray}{betaArray}
 
-\item{size}{size}
+\item{size}{The size of the one-dimensional array \code{original}..}
 }
 \value{
 Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}.

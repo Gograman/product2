@@ -6,8 +6,8 @@
 #'
 #' @description Creating a two-dimensional array of dimensions that cover both \code{dMatrix} and \code{dHatMatrix} data area. 
 #'
-#' @param dMatrix dMatrix
-#' @param dHatMatrix dHatMatrix
+#' @param dMatrix A dMatrix
+#' @param dHatMatrix A dHatMatrix
 #'
 #' @return Returning a two-dimensional array.
 #'

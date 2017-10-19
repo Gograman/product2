@@ -6,9 +6,9 @@
 #'
 #' @description Exporting one- or two-dimensional array \code{original} to a CSV file saved to \code{./export} directory.
 #'
-#' @param original original
+#' @param original A one-dimensional array created using \code{stats::arima.sim()}, passing \code{size} as the length of the array.
 #'
-#' @return A CSV file located in \code{./export} directory.
+#' @return No data structures returned. Saving a CSV file located in \code{"./export"} directory.
 #'
 #' @examples
 #' original1d <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)

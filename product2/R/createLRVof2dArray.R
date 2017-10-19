@@ -6,7 +6,7 @@
 #'
 #' @description Computing a long-run variance of a two-dimensional array (column-wise).
 #'
-#' @param array2d array2d
+#' @param array2d A \code{productCol} two-dimensional array.
 #'
 #' @return A scalar value of the long-run variance of a two-dimensional array.
 #'

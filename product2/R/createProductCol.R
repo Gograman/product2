@@ -6,7 +6,7 @@
 #'
 #' @description Creating a two-dimensional upper-triangle-like array of dimensions \code{c(length(original), length(original))}. Each value in a cell \code{productCol[i, i]} is a product of \code{original[i] * original[i]}.
 #'
-#' @param original A one-dimensinal array \code{original}.
+#' @param original A one-dimensinal array \code{original} of length \code{size}.
 #'
 #' @return Returning a two-dimensional upper-triangle-like array of dimensions \code{c(length(original), length(original))}.
 #'

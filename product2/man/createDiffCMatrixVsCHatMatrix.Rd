@@ -7,9 +7,9 @@
 createDiffCMatrixVsCHatMatrix(cMatrix, cHatMatrix)
 }
 \arguments{
-\item{cMatrix}{cMatrix}
+\item{cMatrix}{A cMatrix}
 
-\item{cHatMatrix}{cHatMatrix}
+\item{cHatMatrix}{A cHatMatrix}
 }
 \value{
 Returning a two-dimensional array.

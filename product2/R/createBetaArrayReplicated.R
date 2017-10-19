@@ -6,10 +6,10 @@
 #'
 #' @description Creating a three-dimensional array of dimensions \code{c(size - 1, size, replicationCount)} using \code{createBetaArray()} as an underlying function.
 #'
-#' @param originalReplicated originalReplicated
-#' @param size size
-#' @param replicationCount replicationCount
-#' @param rho rho
+#' @param originalReplicated A three-dimensional array of dimensions \code{c(replicationCount, size)}.
+#' @param size The size of the one-dimensional array \code{original}.
+#' @param replicationCount An number of replications, other words amount of times \code{createBetaArray()} is going to be executed.
+#' @param rho A \code{rho} parameter.
 #'
 #' @return Returning a three-dimensional array of dimensions \code{c(size - 1, size, replicationCount)}
 #'

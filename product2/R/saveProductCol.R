@@ -4,11 +4,11 @@
 #'
 #' @aliases saveProductCol
 #'
-#' @description Saving two-dimensional array \code{original} to a CSV file saved to \code{./export} directory.
+#' @description Saving a two-dimensional array \code{productCol} to a CSV file saved to \code{"./export"} directory.
 #'
-#' @param dataframe dataframe
+#' @param dataframe A two-dimensional array \code{productCol}
 #'
-#' @return A CSV file located in \code{./export} directory.
+#' @return No data structures returned. Saving a CSV file located in \code{"./export"} directory.
 #'
 #' @examples
 #' original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)

@@ -6,9 +6,9 @@
 #'
 #' @description  Creating a two-dimensional array of dimensions \code{c(size - 1, size - 1)} using a formula from the article.
 #'
-#' @param size size
-#' @param sigma sigma
-#' @param psi psi 
+#' @param size The size of the one-dimensional array \code{original}..
+#' @param sigma \code{Sigma} parameter as being the regular sigma, a.k.a. std.
+#' @param psi The main argument passed to the model of \code{stats::arima.sim()}.
 #'
 #' @return Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}
 #'

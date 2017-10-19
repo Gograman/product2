@@ -8,11 +8,11 @@
 createOriginalMA1(size, psi, sigma)
 }
 \arguments{
-\item{size}{size}
+\item{size}{The size of the future one-dimensional array.}
 
-\item{psi}{psi}
+\item{psi}{The main argument passed to the model of \code{stats::arima.sim()}.}
 
-\item{sigma}{sigma}
+\item{sigma}{\code{Sigma} parameter as being the regular sigma, a.k.a. std.}
 }
 \value{
 Returninng a one-dimensional array of size \code{size}.

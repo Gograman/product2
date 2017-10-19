@@ -7,9 +7,9 @@
 createDiffDMatrixVsDHatMatrix(dMatrix, dHatMatrix)
 }
 \arguments{
-\item{dMatrix}{dMatrix}
+\item{dMatrix}{A dMatrix}
 
-\item{dHatMatrix}{dHatMatrix}
+\item{dHatMatrix}{A dHatMatrix}
 }
 \value{
 Returning a two-dimensional array.

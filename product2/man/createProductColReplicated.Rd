@@ -7,11 +7,11 @@
 createProductColReplicated(originalReplicated, size, replicationCount)
 }
 \arguments{
-\item{originalReplicated}{originalReplicated}
+\item{originalReplicated}{A two-dimensional array.}
 
-\item{size}{size}
+\item{size}{The size of the one-dimensional array.}
 
-\item{replicationCount}{replicationCount}
+\item{replicationCount}{A number of replications, other words, an amount of times \code{createProductCol()} is going to be executed over \code{originalReplicated} .}
 }
 \value{
 Returning a three-dimensional array of dimensions \code{c(size, size, replicationCount)}

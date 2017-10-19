@@ -6,9 +6,9 @@
 #'
 #' @description Creating a one-dimensional array using \code{stats::arima.sim()}, passing \code{size}, \code{sigma} and \code{psi} (\code{psi} being the argument of the model).
 #'
-#' @param size size
-#' @param psi psi
-#' @param sigma sigma
+#' @param size The size of the future one-dimensional array.
+#' @param psi The main argument passed to the model of \code{stats::arima.sim()}.
+#' @param sigma \code{Sigma} parameter as being the regular sigma, a.k.a. std.
 #'
 #' @return Returninng a one-dimensional array of size \code{size}.
 #'

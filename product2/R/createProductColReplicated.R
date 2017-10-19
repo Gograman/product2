@@ -6,9 +6,9 @@
 #'
 #' @description Creating a three-dimensional array of dimensions \code{c(size, size, replicationCount)} using \code{createProductCol()} as an underlying function.
 #'
-#' @param originalReplicated originalReplicated
-#' @param size size
-#' @param replicationCount replicationCount
+#' @param originalReplicated A two-dimensional array.
+#' @param size The size of the one-dimensional array.
+#' @param replicationCount A number of replications, other words, an amount of times \code{createProductCol()} is going to be executed over \code{originalReplicated} .
 #'
 #' @return Returning a three-dimensional array of dimensions \code{c(size, size, replicationCount)}
 #'

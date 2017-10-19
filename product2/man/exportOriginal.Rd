@@ -7,10 +7,10 @@
 exportOriginal(original)
 }
 \arguments{
-\item{original}{original}
+\item{original}{A one-dimensional array created using \code{stats::arima.sim()}, passing \code{size} as the length of the array.}
 }
 \value{
-A CSV file located in \code{./export} directory.
+No data structures returned. Saving a CSV file located in \code{"./export"} directory.
 }
 \description{
 Exporting one- or two-dimensional array \code{original} to a CSV file saved to \code{./export} directory.

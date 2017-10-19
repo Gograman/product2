@@ -6,10 +6,10 @@
 #'
 #' @description Drawing a barplot of side-by-side values of \code{dMatrix} and \code{dHatMatrix} values. Exporting it to a JPEG file saved to \code{"./plots"} directory.
 #'
-#' @param dMatrix dMatrix
-#' @param dHatMatrix dHatMatrix
+#' @param dMatrix A dMatrix
+#' @param dHatMatrix A dHatMatrix
 #'
-#' @return A JPEG file located at \code{"./plots"} directory.
+#' @return No data structures returned. Saving JPEG file located at \code{"./plots"} directory.
 #'
 #' @examples
 #' dMatrix <- createDMatrix(size = 10, sigma = 1, psi = 0.5)

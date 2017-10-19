@@ -6,15 +6,15 @@
 #'
 #' @description Drawing a plot of \code{ProductCol} values. Exporting it to a JPEG file saved to \code{"./plots"} directory.
 #'
-#' @param productCol productCol 
-#' @param size size 
-#' @param mean mean 
-#' @param sigma sigma 
-#' @param lagCount lagCount 
-#' @param darkestColor darkestColor 
-#' @param lightestColor lightestColor 
+#' @param productCol A productCol two-dimensional array.
+#' @param size The size of the one-dimensional array. 
+#' @param mean The mean.
+#' @param sigma The sigma .
+#' @param lagCount The lagCount .
+#' @param darkestColor The darkest color of the canvas that is going to be used to display the tails of the \code{productCol} columns. The smaller \code{lagCount} is, the darker is the color used to display the tail.
+#' @param lightestColor The lightest color of the canvas that is going to be used to display the tails of the \code{productCol} columns. The larger \code{lagCount} is, the lighter is the color used to display the tail.
 #'
-#' @return A JPEG file located at \code{"./plots"} directory.
+#' @return No data structures returned. Saving a JPEG file located at \code{"./plots"} directory.
 #'
 #' @examples
 #' original <- createOriginalMA1(size = 10, psi = 0.5, sigma = 1)

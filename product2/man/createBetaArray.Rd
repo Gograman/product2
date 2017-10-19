@@ -4,12 +4,14 @@
 \alias{createBetaArray}
 \title{createBetaArray}
 \usage{
-createBetaArray(original, rho = 0.5)
+createBetaArray(original, rho = 0.5, gamma0)
 }
 \arguments{
-\item{original}{original}
+\item{original}{A one-dimensional array created using \code{stats::arima.sim()}, passing \code{size} as the length of the array.}
 
-\item{rho}{rho}
+\item{rho}{A \code{rho} parameter.}
+
+\item{gamma0}{A \code{gamma0} parameter.}
 }
 \value{
 Returning a two-dimensional array of dimensions \code{c(size - 1, size)}.

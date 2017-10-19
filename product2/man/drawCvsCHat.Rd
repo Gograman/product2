@@ -7,12 +7,12 @@
 drawCvsCHat(cMatrix, cHatMatrix)
 }
 \arguments{
-\item{cMatrix}{cMatrix}
+\item{cMatrix}{A cMatrix}
 
-\item{cHatMatrix}{cHatMatrix}
+\item{cHatMatrix}{A cHatMatrix}
 }
 \value{
-A JPEG file located at \code{"./plots"} directory.
+No data structures returned. Saving JPEG file located at \code{"./plots"} directory.
 }
 \description{
 Drawing a barplot of side-by-side values of \code{cMatrix} and \code{cHatMatrix} values. Exporting it to a JPEG file saved to \code{"./plots"} directory.

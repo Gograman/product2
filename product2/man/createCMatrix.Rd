@@ -7,11 +7,11 @@
 createCMatrix(size, sigma, psi)
 }
 \arguments{
-\item{size}{size}
+\item{size}{The size of the one-dimensional array \code{original}..}
 
-\item{sigma}{sigma}
+\item{sigma}{\code{Sigma} parameter as being the regular sigma, a.k.a. std.}
 
-\item{psi}{psi}
+\item{psi}{he main argument passed to the model of \code{stats::arima.sim()}.}
 }
 \value{
 Returning a two-dimensional array of dimensions \code{c(size - 1, size - 1)}

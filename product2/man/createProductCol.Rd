@@ -8,7 +8,7 @@
 createProductCol(original)
 }
 \arguments{
-\item{original}{A one-dimensinal array \code{original}.}
+\item{original}{A one-dimensinal array \code{original} of length \code{size}.}
 }
 \value{
 Returning a two-dimensional upper-triangle-like array of dimensions \code{c(length(original), length(original))}.

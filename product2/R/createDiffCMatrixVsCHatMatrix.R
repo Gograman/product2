@@ -6,8 +6,8 @@
 #'
 #' @description Creating a two-dimensional array of dimensions that cover both \code{cMatrix} and \code{cHatMatrix} data area, using \code{(c(min(dim(cMatrix)[1], dim(cHatMatrix)[1]), c(min(dim(cMatrix)[2], dim(cHatMatrix)[2]),)}.
 #'
-#' @param cMatrix cMatrix
-#' @param cHatMatrix cHatMatrix
+#' @param cMatrix A cMatrix
+#' @param cHatMatrix A cHatMatrix
 ##'
 #' @return Returning a two-dimensional array.
 #'

@@ -6,10 +6,10 @@
 #'
 #' @description Drawing a barplot of side-by-side values of \code{cMatrix} and \code{cHatMatrix} values. Exporting it to a JPEG file saved to \code{"./plots"} directory.
 #'
-#' @param cMatrix cMatrix
-#' @param cHatMatrix cHatMatrix
+#' @param cMatrix A cMatrix
+#' @param cHatMatrix A cHatMatrix
 #'
-#' @return A JPEG file located at \code{"./plots"} directory.
+#' @return No data structures returned. Saving JPEG file located at \code{"./plots"} directory.
 #'
 #' @examples
 #' cMatrix <- createCMatrix(size = 10, sigma = 1, psi = 0.5) 

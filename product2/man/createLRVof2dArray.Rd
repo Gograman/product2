@@ -7,7 +7,7 @@
 createLRVof2dArray(array2d)
 }
 \arguments{
-\item{array2d}{array2d}
+\item{array2d}{A \code{productCol} two-dimensional array.}
 }
 \value{
 A scalar value of the long-run variance of a two-dimensional array.

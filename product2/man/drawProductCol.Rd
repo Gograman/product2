@@ -8,22 +8,22 @@ drawProductCol(productCol, size, mean, sigma, lagCount,
   darkestColor = "dark blue", lightestColor = "white")
 }
 \arguments{
-\item{productCol}{productCol}
+\item{productCol}{A productCol two-dimensional array.}
 
-\item{size}{size}
+\item{size}{The size of the one-dimensional array.}
 
-\item{mean}{mean}
+\item{mean}{The mean.}
 
-\item{sigma}{sigma}
+\item{sigma}{The sigma .}
 
-\item{lagCount}{lagCount}
+\item{lagCount}{The lagCount .}
 
-\item{darkestColor}{darkestColor}
+\item{darkestColor}{The darkest color of the canvas that is going to be used to display the tails of the \code{productCol} columns. The smaller \code{lagCount} is, the darker is the color used to display the tail.}
 
-\item{lightestColor}{lightestColor}
+\item{lightestColor}{The lightest color of the canvas that is going to be used to display the tails of the \code{productCol} columns. The larger \code{lagCount} is, the lighter is the color used to display the tail.}
 }
 \value{
-A JPEG file located at \code{"./plots"} directory.
+No data structures returned. Saving a JPEG file located at \code{"./plots"} directory.
 }
 \description{
 Drawing a plot of \code{ProductCol} values. Exporting it to a JPEG file saved to \code{"./plots"} directory.

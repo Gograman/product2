@@ -6,7 +6,7 @@
 #'
 #' @description Computing a long-run variance of a three-dimensional array.
 #'
-#' @param array3d array3d
+#' @param array3d  A \code{productColReplicated} three-dimensional array.
 #'
 #' @return An array of the LRV (long-run variance) values of each column.
 #'

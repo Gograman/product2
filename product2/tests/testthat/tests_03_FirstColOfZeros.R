@@ -13,13 +13,14 @@ firstColOfZerosFunction <- function() {
   firstColOfDMatrix <- myDMatrix[, 1]
   aShouldBeArray <- rep(0, 9)
   expect_that(firstColOfDMatrix, equals(aShouldBeArray))
-  cat("\nDuration = ",duration,"\n")
-  cat("\nfirst colum of Dmatrix = ",firstColOfDMatrix,"\n")
-  cat("=====================")
-  cat("\nTest parameters :","\n")
-  cat("\nsize = ",mySize,"\n")
-  cat("\npsi = ",myPsi,"\n")
-  cat("\nsigma = ",mySigma,"\n")
+  cat(" - ColOfZeros array is all right. \n")
+
+  cat("Duration = ",duration,"\n")
+  cat("first colum of Dmatrix = ",firstColOfDMatrix,"\n")
+  cat("Test parameters :","\n")
+  cat("size = ",mySize,"\n")
+  cat("psi = ",myPsi,"\n")
+  cat("sigma = ",mySigma,"\n")
 }
 
 test_that(desc = "Testing dMatrix for zeros in the first column",

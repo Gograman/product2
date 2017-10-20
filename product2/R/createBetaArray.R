@@ -19,13 +19,8 @@
 #' @export
 
 createBetaArray <- function(original,
-<<<<<<< HEAD
-                            rho = 0.5,
-                            gamma0) {
-=======
                             rho,
-							gamma0) {
->>>>>>> c01c7de9051e23dab2e7d836c04157e241c546c4
+                            gamma0) {
   size <- length(original)
   betaArray <- array(NA, dim = c(size-1, size))
 

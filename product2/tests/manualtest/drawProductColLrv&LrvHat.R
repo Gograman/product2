@@ -4,14 +4,15 @@ if (!require("rstudioapi"))
 library(rstudioapi)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # Loading the functions
-source("sourceAll.R")
+#source("sourceAll.R")
+size = 100
+replicationCount = getReplicationCountFromSampleSize(size)
 
-replicationCount = 50
-size = 10
-psi = .5
+psi = 0.5
 # psi = 0 # makes it iid
 sigma = 1
 mean = 0
+
 cMatrix <- createCMatrix(size = size,
                          psi = psi,
                          sigma = sigma)
@@ -22,6 +23,7 @@ NlrvProductColReplicatedHat <- 5
 lrvProductColReplicatedHatArray <- matrix(0, nrow = size - 1,ncol = NlrvProductColReplicatedHat)
 for(index in 1:NlrvProductColReplicatedHat)
 {
+
 
   originalReplicated <- createOriginalMA1Replicated(replicationCount = replicationCount,
                                                     size = size,
@@ -34,7 +36,8 @@ for(index in 1:NlrvProductColReplicatedHat)
   fileName <- "productCol_lrvHatTemp"
   fileName <- paste(fileName,index,sep = "_")
   saveJpg(fileName,"./plots/")
-  plot(lrvHat~xArray,type = "l", col = "blue",xlab = "size")
+  plot(lrvHat~xArray,type = "l", col = "blue",xlab = "lag")
+  lines(lrvProductColReplicated~xArray,col = "red")
   title(main = "ProductColLrvHat")
   graphics.off()
   lrvProductColReplicatedHatArray[,index] <- lrvHat
@@ -44,7 +47,7 @@ max <- max(df)
 min <- min(df)
 
 saveJpg("productCol_lrv","./plots/")
-plot(lrvProductColReplicated ~ xArray, type = "l",col = "red",ylim = c(min,max),xlab  = "size")
+plot(lrvProductColReplicated ~ xArray, type = "l",col = "red",ylim = c(min,max),xlab  = "lag")
 title(main="ProductCol lrv & lrvHat")
 lineArray <- c("ProductColLRV","ProductColLRVHat")
 legend("topright",

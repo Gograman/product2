@@ -18,8 +18,9 @@
 #'
 #' @export
 
-createProductColReplicated <- function(originalReplicated, size, replicationCount) {
-
+createProductColReplicated <- function(originalReplicated) {
+	replicationCount = dim(originalReplicated)[1]
+	size =  dim(originalReplicated)[2]
   prodColReplicated <- apply(X = originalReplicated,
                              MARGIN = 1,
                              FUN = createProductCol)

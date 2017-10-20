@@ -15,18 +15,18 @@ myTestFunction = function() {
   dimOfCMatrix <- dim(myCMatrix)
   dimShouldBe <- c(9, 9)
   expect_that(dimOfCMatrix, equals(dimShouldBe))
-  cat("\nDuration = ",duration,"\n")
-  cat("\nCmatrix = ",myCMatrix,"\n")
-  cat("=====================")
-  cat("\nTest parameters :","\n")
-  cat("\nsize = ",mySize,"\n")
-  cat("\npsi = ",myPsi,"\n")
-  cat("\nsigma = ",mySigma,"\n")
+  cat(" - dimensions of cMatrix are correct. \n")
+  cat("Duration =", duration, "\n")
+  cat("cmatrix =", myCMatrix[1:5, 1:5], "\n")
+  cat("Test parameters:", "\n")
+  cat("size =", mySize, "\n")
+  cat("psi =", myPsi, "\n")
+  cat("sigma =", mySigma, "\n")
 }
 
 test_that(desc = "Testing createCMatrix for dimensions",
           code = {
             myTestFunction()
-            cat(" End of test createCMatrix","\n")
+            cat("End of test createCMatrix","\n")
             cat("=====================")
             })

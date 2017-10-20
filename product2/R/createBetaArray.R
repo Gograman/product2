@@ -8,7 +8,7 @@
 #'
 #' @param original A one-dimensional array created using \code{stats::arima.sim()}, passing \code{size} as the length of the array.
 #' @param rho A \code{rho} parameter.
-#' @param gamma0 A \code{gamma0} parameter.
+#' @param gamma0 A \code{gamma0} parameter, the true variance of the process.
 #'
 #' @return Returning a two-dimensional array of dimensions \code{c(size - 1, size)}.
 #'
@@ -19,8 +19,13 @@
 #' @export
 
 createBetaArray <- function(original,
+<<<<<<< HEAD
                             rho = 0.5,
+                            gamma0) {
+=======
+                            rho,
 							gamma0) {
+>>>>>>> c01c7de9051e23dab2e7d836c04157e241c546c4
   size <- length(original)
   betaArray <- array(NA, dim = c(size-1, size))
 

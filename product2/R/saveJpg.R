@@ -14,7 +14,7 @@
 #'
 #'@export
 
-saveJpg <- function(fileName, path)
+saveJpg <- function(fileName, path, timeStamp = TRUE)
 {
   if(!dir.exists(path))
   {
@@ -22,7 +22,9 @@ saveJpg <- function(fileName, path)
   }
 
   fileName <- gsub("\\.","", fileName)
-  curTime <-format(Sys.time(),"%M_%S")
+  curTime <- ""
+  if(timeStamp)
+  {curTime <-format(Sys.time(),"%M_%S")}
 
   fileName <- gsub(" ","_", paste0(fileName, "_", curTime,".jpg"))
   fileName <- gsub(":", "_", fileName)

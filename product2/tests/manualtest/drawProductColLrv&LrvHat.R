@@ -21,6 +21,8 @@ lrvProductColReplicated = cMatrix [1,] + 2 * cMatrix [2,]
 xArray <- 1:(size-1)
 NlrvProductColReplicatedHat <- 5
 lrvProductColReplicatedHatArray <- matrix(0, nrow = size - 1,ncol = NlrvProductColReplicatedHat)
+subtitle <- paste("lag\n","size=replicationcount = ",size,"\npsi = ",psi,
+                  ", sigma = ", sigma, ", mean = ", mean)
 for(index in 1:NlrvProductColReplicatedHat)
 {
 
@@ -29,26 +31,23 @@ for(index in 1:NlrvProductColReplicatedHat)
                                                     size = size,
                                                     psi = psi,
                                                     sigma = sigma)
-  productColReplicated <- createProductColReplicated(originalReplicated = originalReplicated,
-                                                     size = size,
-                                                     replicationCount = replicationCount)
+  productColReplicated <- createProductColReplicated(originalReplicated = originalReplicated)
   lrvHat <- createLRVof3dArray(array3d = productColReplicated)
   fileName <- "productCol_lrvHatTemp"
   fileName <- paste(fileName,index,sep = "_")
   saveJpg(fileName,"./plots/")
-  plot(lrvHat~xArray,type = "l", col = "blue",xlab = "lag")
+  plot(lrvHat~xArray,type = "l", col = "blue",xlab = "")
   lines(lrvProductColReplicated~xArray,col = "red")
-  title(main = "ProductColLrvHat")
+  title(main = "ProductColLrvHat",sub = subtitle )
   graphics.off()
   lrvProductColReplicatedHatArray[,index] <- lrvHat
 }
 df <- data.frame(lrvProductColReplicated,lrvProductColReplicatedHatArray)
 max <- max(df)
 min <- min(df)
-
 saveJpg("productCol_lrv","./plots/")
-plot(lrvProductColReplicated ~ xArray, type = "l",col = "red",ylim = c(min,max),xlab  = "lag")
-title(main="ProductCol lrv & lrvHat")
+plot(lrvProductColReplicated ~ xArray, type = "l",col = "red",ylim = c(min,max),xlab  = "")
+title(main="ProductCol lrv & lrvHat",sub = subtitle)
 lineArray <- c("ProductColLRV","ProductColLRVHat")
 legend("topright",
        title = "LRV",

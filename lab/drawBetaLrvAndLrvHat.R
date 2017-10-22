@@ -17,6 +17,10 @@ dMatrix <- createDMatrix(size = size,
                          sigma = sigma)
 lrvBetaArrayReplicated = dMatrix [1,] + 2 * dMatrix [2,]
 
+original <- createOriginalMA1(size = size,
+                              psi = psi,
+                              sigma = sigma)
+
 originalReplicated <- createOriginalMA1Replicated(replicationCount = replicationCount,
                                                   size = size,
                                                   psi = psi,

@@ -1,8 +1,25 @@
 #' @export
 
-testUtilCreateOriginalMA1 <- function() {
-  originalMA1 <- createOriginalMA1(replicationCount = 10,
-                                                       size = 10,
-                                                       psi = 0.5,
-                                                       sigma = 1)
+testUtilCreateOriginalMA1 <- function(replicationCount,
+                                      size,
+                                      psi,
+                                      sigma) {
+  cat("\nTesting \'tests_04_createOriginalMA1\' \n")
+  Start <- Sys.time()
+  originalMA1 <- createOriginalMA1(size = size,
+                                   psi = psi,
+                                   sigma = sigma)
+  End <- Sys.time()
+  duration <- End - Start
+  expect_that(length(originalMA1), equals(10))
+  cat(" - length of originalMa1 array is all right. \n")
+  cat("Duration =", duration, "\n")
+  cat("OriginalMa1 =", originalMA1[1:5], "\n")
+  cat("Test parameters:", "\n")
+  cat("size =", size, "\n")
+  cat("psi =", psi, "\n")
+  cat("sigma =", sigma, "\n")
+  cat("End of test createOriginalMA1","\n")
+  cat("=====================")
+
 }

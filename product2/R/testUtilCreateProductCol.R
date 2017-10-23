@@ -1,14 +1,12 @@
 #' @export
 
-testUtilCreateProductCol <- function(replicationCount,
-                                     size,
+testUtilCreateProductCol <- function(size,
                                      psi,
                                      sigma) {
   cat("\nTesting \'tests_11_createProductCol\' \n")
   Start <- Sys.time()
 
-  originalMA1 <- createOriginalMA1(replicationCount = replicationCount,
-                                   size = size,
+  originalMA1 <- createOriginalMA1(size = size,
                                    psi = psi,
                                    sigma = sigma)
   productCol <- createProductCol(originalMA1)

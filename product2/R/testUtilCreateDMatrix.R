@@ -5,12 +5,12 @@ testUtilCreateDMatrix <- function(size,
                                   psi) {
   cat("\nTesting \'tests_02_createDMatrix\' \n")
   Start <- Sys.time()
-  cMatrix <- createDMatrix(size = size,
+  dMatrix <- createDMatrix(size = size,
                            sigma = sigma,
                            psi = psi)
   End <- Sys.time()
   duration <- End - Start
-  dimOfCMatrix <- dim(myDMatrix)
+  dimOfDMatrix <- dim(dMatrix)
   dimShouldBe <- c(9, 9)
   expect_that(dimOfDMatrix, equals(dimShouldBe))
   cat(" - dimensions of dMatrix are correct. \n")

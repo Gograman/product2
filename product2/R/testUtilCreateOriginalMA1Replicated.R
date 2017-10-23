@@ -12,7 +12,7 @@ testUtilCreateOriginalMA1Replicated <- function(replicationCount,
                                                        sigma = sigma)
   End <- Sys.time()
   duration <- End - Start
-  expect_that(dim(originalMA1Replicated), equals(c(replicationCount, mySize)))
+  expect_that(dim(originalMA1Replicated), equals(c(replicationCount, size)))
   cat(" - dimensions of originalMA1Replicated array are all right. \n")
   cat("Duration =", duration, "\n")
   cat("OriginalMa1Replicated =", originalMA1Replicated[1:5, 1:5], "\n")

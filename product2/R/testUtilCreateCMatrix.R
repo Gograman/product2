@@ -10,7 +10,7 @@ testUtilCreateCMatrix <- function(size,
                            psi = psi)
   End <- Sys.time()
   duration <- End - Start
-  dimOfCMatrix <- dim(myCMatrix)
+  dimOfCMatrix <- dim(cMatrix)
   dimShouldBe <- c(9, 9)
   expect_that(dimOfCMatrix, equals(dimShouldBe))
   cat(" - dimensions of cMatrix are correct. \n")

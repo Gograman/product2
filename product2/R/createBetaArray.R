@@ -22,21 +22,21 @@ createBetaArray <- function(original,
                             rho,
                             gamma0) {
   size <- length(original)
-  cat ("\n size =", size)
+  #cat ("\n size =", size)
   betaArray <- array(NA, dim = c(size-1, size))
 
   lag = 1
   while ((size - lag) > 0) {
-    cat ("\nlag =", lag)
+    #cat ("\nlag =", lag)
     for (rowIndex in 1:(size - 1)) {
-      cat("\nrowIndex =", rowIndex)
+      #cat("\nrowIndex =", rowIndex)
       for (colIndex in 1:(size - lag + 1)) {
-        cat("\ncolIndex =", colIndex)
+        #cat("\ncolIndex =", colIndex)
         myBeta =
         original[rowIndex] *
           (original[colIndex + lag - 1] - rho[rowIndex] * original[rowIndex])
           #(original[colIndex + lag - 1] - rho * original[rowIndex])
-        cat("\nmyBeta =", myBeta )
+        #cat("\nmyBeta =", myBeta )
         betaArray[rowIndex, colIndex] <- myBeta
 
       }

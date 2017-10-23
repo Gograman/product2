@@ -2,7 +2,7 @@ if (!require("rstudioapi"))
   install.packages("rstudioapi")
 library(rstudioapi)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-sizeArray <- seq(10,2000,by = 100)
+sizeArray <- seq(10,5000,by = 100)
 psi = .5
 sigma = 1
 

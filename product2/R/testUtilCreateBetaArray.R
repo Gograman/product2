@@ -2,19 +2,19 @@
 
 testUtilCreateBetaArray <- function(size,
                                     psi,
-                                    sigma, # these three are for creating originalMA1
-                                    rho,
-                                    gamma0) {
+                                    sigma) {
   cat("\nTesting \'tests_21_createBetaArray\' \n")
 
   Start <- Sys.time()
 
 
-  original <- createOriginalMA1(size = 10,
-                                psi = 0.5,
-                                sigma = 1)
+  gamma <- createGamma(sigma = sigma,
+                       psi = psi)
+  original <- createOriginalMA1(size = size,
+                                psi = psi,
+                                sigma = sigma)
 
-  betaArray <- createBetaArray(original, rho = 0.5)
+  betaArray <- createBetaArray(original, gamma0 = gamma[1])
 
   End <- Sys.time()
   duration <- End - Start

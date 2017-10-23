@@ -20,10 +20,15 @@
 
 createBetaArray <- function(original,
                             rho,
+                            psi,
                             gamma0) {
   size <- length(original)
-  #cat ("\n size =", size)
-  betaArray <- array(NA, dim = c(size-1, size))
+
+  cat ("\n size =", size)
+
+  rho <- createRho(size, psi)
+  betaArray <- array(NA, dim = c(size - 1, size))
+
 
   lag = 1
   while ((size - lag) > 0) {

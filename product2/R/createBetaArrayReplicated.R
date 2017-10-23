@@ -19,8 +19,6 @@
 #'
 #' @export
 
-
-
 createBetaArrayReplicated <- function(originalReplicated,
                                       size,
                                       replicationCount,

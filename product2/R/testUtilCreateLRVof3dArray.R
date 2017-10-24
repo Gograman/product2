@@ -24,6 +24,6 @@ testUtilCreateLRVof3dArray <- function(replicationCount, size,
   cat("sigma =", sigma, "\n")
   cat("replicationCount =", replicationCount, "\n")
   cat("originalREplicated =", originalReplicated[1:5], "\n")
-  cat("End of test createBetaArray", "\n")
+  cat("End of test CreateLRVof3dArray", "\n")
   cat("=====================")
 }
